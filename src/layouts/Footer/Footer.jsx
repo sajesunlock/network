@@ -63,8 +63,8 @@ function Footer({ t, i18n }) {
                 <div className="col-md-12">
                      <div className="footer">
                           <p>&copy;
-                            Copyright  Observatoire des Réseaux Communautaires
-                            {new Date().getFullYear()}
+                            Copyright  Observatoire des Réseaux
+                            Communautaires {new Date().getFullYear()}
                           </p>
                      </div>
                 </div>

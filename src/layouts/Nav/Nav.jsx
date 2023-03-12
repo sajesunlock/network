@@ -12,17 +12,17 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark navBg">
             <div className="container">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
                 <img src="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" width="60" height="60" className="d-inline-block align-top mr-1 p-1 bg-light rounded-circle" alt="" />
                 ORC
-            </a>
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style={{ maxHeight: 100 }}>
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">A propos de nous <span className="sr-only">(current)</span></a>
+                  <Link className="nav-link" to="/about">A propos de nous <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item active">
                   <Link to="/lookup/community" className="nav-link" href="#">Où nous trouver</Link>
