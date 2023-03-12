@@ -12,9 +12,9 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark navBg">
             <div className="container">
-            <a className="navbar-brand" href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" width="60" height="60" className="d-inline-block align-top p-2 text-light" alt="" />
-                ONC
+            <a className="navbar-brand" href="/">
+                <img src="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" width="60" height="60" className="d-inline-block align-top mr-1 p-1 bg-light rounded-circle" alt="" />
+                ORC
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
@@ -22,11 +22,16 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style={{ maxHeight: 100 }}>
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                  <a className="nav-link" href="#">A propos de nous <span className="sr-only">(current)</span></a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Link</a>
+                <li className="nav-item active">
+                  <Link to="/lookup/community" className="nav-link" href="#">Où nous trouver</Link>
                 </li>
+
+                <li className="nav-item active">
+                  <Link to="/contact" className="nav-link ">Contactez nous</Link>
+                </li>
+
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                     Link
@@ -34,18 +39,23 @@ function Navbar() {
                   <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#">Action</a></li>
                         <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr className="dropdown-divider" /></li>
+                    <li><a className="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-                    <li className="nav-item">
-                      <a className="nav-link disabled">Link</a>
-                    </li>
               </ul>
-            <form className="d-flex">
-              <input className="form-control mr-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+              <div className="col-md-1 col-2 nav-icon m-0 pr-0 pl-2 dropdown bg-light rounded">
+                <i className="fa fa-2x fa-language" aria-hidden="true" />
+                <div className="dropdown-content">
+                  <div className={i18n.language === "fr" ? "pt-3 pl-2 pb-3 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("fr")}>Fr</div>
+                  <hr className="m-0" />
+                  <div className={i18n.language === "en" ? "pt-3 pb-3 pl-2 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("en")}>Eng</div>
+                  <hr className="m-0" />
+                  <div className={i18n.language === "es" ? "pt-3 pb-3 pl-2 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("es")}>Es</div>
+                </div>
+              </div>
+
             </div>
             </div>
         </nav>

@@ -5,4 +5,68 @@
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 900;
-  }
+}
+.nav-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.display-4{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #fff
+}
+
+.titre{
+    font-family: serif;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+p{
+    font-weight: 350;
+    font-size: 1.5rem;
+}
+.jumbotron{
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
+    background-size:cover;
+    height: 25vw;
+}
+
+/* dropdown menu */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 32px 6px 32px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
