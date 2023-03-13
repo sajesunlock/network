@@ -23,7 +23,8 @@ export default function AddCommunityForm() {
     };
 
   return (
-    <form className="p-4">
+    <form className="p-4 mt-5">
+      <h3 className="titre">Ajouter community</h3><hr />
         <div className="form-group">
           <label htmlFor="exampleDropdownFormEmail2">Community Name</label>
           <input type="text" className="form-control" name="name" id="exampleDropdownFormEmail2" placeholder="Nom" />

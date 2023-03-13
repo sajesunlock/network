@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import { withTranslation } from "react-i18next";
 import contactFormSchema from "../yup/contactFormSchema";
 import { postData } from "../fetch/post";
+import { setData } from "../service/dataService";
 
 const url = process.env.REACT_APP_API_CONTACT;
 
@@ -12,9 +13,7 @@ function FormContact({ t, i18n }) {
   const [err, setErr] = useState(false);
 
   const onSubmit = (values, actions) => {
-    const data = postData(`${url}/`, values);
-    if (data.error) setErr(data);
-    if (!data) setLoad(true);
+    setData("email", values);
     setSuccess(true);
     actions.resetForm();
   };

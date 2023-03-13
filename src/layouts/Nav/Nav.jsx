@@ -31,10 +31,12 @@ function Navbar() {
                 <li className="nav-item active">
                   <Link to="/contact" className="nav-link ">Contactez nous</Link>
                 </li>
-
+                {/**
                 <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Link
+                  <a
+                  className="nav-link dropdown-toggle"
+                  href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Link
                   </a>
                   <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#">Action</a></li>
@@ -43,6 +45,7 @@ function Navbar() {
                     <li><a className="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
+                */}
               </ul>
 
               <div className="col-md-1 col-2 nav-icon m-0 pr-0 pl-2 dropdown bg-light rounded">

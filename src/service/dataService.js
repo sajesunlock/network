@@ -1,27 +1,28 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
 import db from "../firebase/firebaseConfig";
 
-console.log(db);
-
-/**  const db = firebase.collection("community");
-
-class CommunityDataService {
-  getAll() {
-    return db;
-  }
-
-  create(tutorial) {
-    return db.add(tutorial);
-  }
-
-  update(id, value) {
-    return db.doc(id).update(value);
-  }
-
-  delete(id) {
-    return db.doc(id).delete();
-  }
+async function getData(name) {
+  const query = collection(db, name);
+  const data = await getDocs(query);
+  return data.docs;
 }
 
-export default new CommunityDataService();
-*/
+// getData(db);
+
+async function setData(name, data) {
+  const add = addDoc(collection(db, name), data);
+}
+
+async function updateData(name, id, data) {
+  const update = doc(db, name, id);
+  await updateData(update, data);
+}
+
+async function deleteData(name, id) {
+  const deleteItem = doc(db, name, id);
+  await deleteDoc(deleteItem);
+}
+
+export { getData, setData, updateData, deleteData };
+
+export default db;
