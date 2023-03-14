@@ -54,8 +54,6 @@ function Navbar() {
                   <div className={i18n.language === "fr" ? "pt-3 pl-2 pb-3 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("fr")}>Fr</div>
                   <hr className="m-0" />
                   <div className={i18n.language === "en" ? "pt-3 pb-3 pl-2 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("en")}>Eng</div>
-                  <hr className="m-0" />
-                  <div className={i18n.language === "es" ? "pt-3 pb-3 pl-2 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("es")}>Es</div>
                 </div>
               </div>
 
