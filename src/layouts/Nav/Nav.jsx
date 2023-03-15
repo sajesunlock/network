@@ -81,7 +81,7 @@ const handleLogout = () => {
               </ul>
 
               <div className="col-md-1 col-2 nav-icon m-0 pr-0 pl-2 dropdown bg-light rounded">
-                <i className="fa fa-2x fa-language" aria-hidden="true" />
+                <i className="fa fa-2x fa-language " aria-hidden="true" />
                 <div className="dropdown-content">
                   <div className={i18n.language === "fr" ? "pt-3 pl-2 pb-3 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("fr")}>Fr</div>
                   <hr className="m-0" />
