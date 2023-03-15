@@ -1,10 +1,10 @@
 import React from "react";
-import ListImages from "../components/ListImages";
+import ProfileCommunity from "../components/ProfileCommunity";
 
 export default function Community() {
   return (
     <div className="container-fuild">
-        <ListImages />
+        <ProfileCommunity />
     </div>
   );
 }
