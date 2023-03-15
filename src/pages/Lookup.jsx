@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
+import { useMap } from "react-leaflet";
 import { auth } from "../firebase/firebaseConfig";
 import db from "../service/dataService";
 import AddCommunityForm from "../components/AddCommunityForm";
@@ -11,6 +12,20 @@ import Modal from "../components/Modal";
 export default function Lookup() {
   const [community, setCommunity] = useState(null);
   const [isLogging, setisLogging] = useState(false);
+  const [lng, setLng] = useState(null);
+  const [lat, setLat] = useState(null);
+
+  function MyComponent() {
+    const map = useMap();
+
+    console.log("map center:", map.addEventListener("click", (e) => {
+      setLat(e.latlng.lat);
+      setLng(e.latlng.lng);
+      console.log(`click: ${lat}, ${lng}`);
+    }));
+
+    return null;
+  }
 
     useEffect(() => {
         async function getCommunity() {
@@ -37,19 +52,24 @@ export default function Lookup() {
           }
       });
   }, []);
-
   return (
     <div className="container-fluid">
         <div className="row mt-3 p-0">
             <div className="col-md-8">
-                <Map community={community} />
+                <Map
+                  community={community}
+                  MyComponent={MyComponent}
+                />
             </div>
             <div className="col-md-4">
               <ItemCommunity community={community} />
               <hr />
               <h3 className="titre">Ajouter community</h3>
               {isLogging ? (
-                <AddCommunityForm />
+                <AddCommunityForm
+                  lat={lat}
+                  lng={lng}
+                />
                ) :
               <Modal /> }
             </div>
