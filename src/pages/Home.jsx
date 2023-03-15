@@ -6,6 +6,8 @@ import Network from "../static/img/network.png";
 export default function Home() {
   return (
     <div className="container-fluid">
+      <div className="row">
+      <div className="col-12 p-0">
       <div className="jumbotron">
       <div className="container">
       <h1 className="display-4"> Observatoire des Réseaux Communautaires</h1>
@@ -14,8 +16,8 @@ export default function Home() {
       </p>
       </div>
       </div>
-      <div className="row conainer-fluid">
-        <div className="col-6">
+        <div className="row m-0 p-5">
+        <div className="col-md-6 col-12">
           <h1 className="titre mb-3 mt-3">C’est quoi un Réseau Communautaire!</h1>
           <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
           <p className="lead">Preparing a new generation to succeed as leaders in Internet technology,
@@ -46,9 +48,11 @@ export default function Home() {
               levels of society.
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <img src={Network} alt="" width="100%" height="100%" />
         </div>
+        </div>
+      </div>
       </div>
     </div>
   );

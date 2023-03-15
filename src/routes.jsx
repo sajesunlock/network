@@ -32,7 +32,7 @@ function RoutesPage() {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/lookup/community" element={<Lookup />} />
-                  <Route path="/lookup/community/:id" element={<Community />} />
+                  <Route path="/lookup/community/node/:id" element={<Community />} />
 
                   <Route exact path="*" element={<NotFound />} />
               </Routes>

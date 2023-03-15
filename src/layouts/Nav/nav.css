@@ -18,6 +18,21 @@
     color: #fff
 }
 
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 400px) {
+    .display-4{
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.4;
+        font-weight: 600;
+        color: #fff;
+       
+        font-size:1.5rem;
+    }
+    .leaflet-container {
+        height: 100vw;
+    }
+  }
+
 .titre{
     font-family: serif;
     line-height: 1;
@@ -31,7 +46,7 @@ p{
 .jumbotron{
     background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
     background-size:cover;
-    height: 25vw;
+    width: auto;
 }
 
 /* dropdown menu */

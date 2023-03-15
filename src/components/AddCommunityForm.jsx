@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
 
-import CommunityDataService, { setData } from "../service/dataService";
+import { setData } from "../service/dataService";
 
 export default function AddCommunityForm() {
     const [community, setCommunity] = useState({

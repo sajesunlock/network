@@ -1,13 +1,45 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation, Trans } from "react-i18next";
+
+import { auth } from "../../firebase/firebaseConfig";
 
 import "./nav.css";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
+  const [isLogging, setisLogging] = useState(false);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          // const uid = user.uid;
+          setisLogging(true);
+          // ...
+          // console.log("uid", uid)
+        } else {
+          // User is signed out
+          // ...
+          console.log("user is logged out");
+        }
+    });
+}, []);
+
+const handleLogout = () => {
+  signOut(auth).then(() => {
+  // Sign-out successful.
+      // navigate("/lookup/community");
+      window.location.reload();
+      console.log("Signed out successfully");
+  }).catch((error) => {
+  // An error happened.
+  });
+};
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark navBg">
@@ -56,7 +88,9 @@ function Navbar() {
                   <div className={i18n.language === "en" ? "pt-3 pb-3 pl-2 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("en")}>Eng</div>
                 </div>
               </div>
-
+              {isLogging ?
+              <i onClick={handleLogout} className="fa fa-1x ml-3 bg-light rounded p-2 fa-sign-out" aria-hidden="true" />
+                : "" }
             </div>
             </div>
         </nav>
