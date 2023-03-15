@@ -18,11 +18,10 @@ export default function Lookup() {
   function MyComponent() {
     const map = useMap();
 
-    console.log("map center:", map.addEventListener("click", (e) => {
+    map.addEventListener("click", (e) => {
       setLat(e.latlng.lat);
       setLng(e.latlng.lng);
-      console.log(`click: ${lat}, ${lng}`);
-    }));
+    });
 
     return null;
   }

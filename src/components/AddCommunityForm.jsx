@@ -6,8 +6,6 @@ import { setData } from "../service/dataService";
 export default function AddCommunityForm({ lat, lng }) {
     const [community, setCommunity] = useState({
         name: "",
-        lat: "",
-        long: "",
         desc: "",
     });
 
@@ -15,16 +13,21 @@ export default function AddCommunityForm({ lat, lng }) {
         setCommunity({
             ...community,
             [e.target.name]: e.target.value,
+            lat,
+            long: lng,
         });
     };
 
     const handleSubmit = () => {
         setData("community", community);
         alert("community has add !");
-        window.location.reload();
+        setCommunity({
+          name: "",
+          desc: "",
+      });
     };
   return (
-    <form className="p-4 mt-0">
+    <div className="p-4 mt-0">
         <div className="form-group">
           <label htmlFor="exampleDropdownFormEmail2">Community Name</label>
           <input type="text" className="form-control" name="name" onChange={handleChange} id="exampleDropdownFormEmail2" placeholder="Nom" />
@@ -46,7 +49,7 @@ export default function AddCommunityForm({ lat, lng }) {
           <label>Desc</label>
           <textarea cols={12} className="form-control" onChange={handleChange} name="desc" />
         </div>
-        <button type="submit" onClick={handleSubmit} className="btn btn-primary btn-block">Ajouter</button>
-    </form>
+        <button onClick={handleSubmit} className="btn btn-primary btn-block">Ajouter</button>
+    </div>
   );
 }
