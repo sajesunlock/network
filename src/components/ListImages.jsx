@@ -10,7 +10,7 @@ export default function ListImages() {
     { data ?
     data.map((image) => (
         <div className="col-6 col-md-4 p-0 m-0">
-            <img src={image.urls.regular} width="100%" height="350px" alt="" />
+            <img src={image.urls.regular} width="100%" height="100%" alt="" />
         </div>
     )) : "Loading"}
     </div>

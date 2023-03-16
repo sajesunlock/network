@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ItemCommunity({ community }) {
   return (
@@ -16,7 +17,7 @@ export default function ItemCommunity({ community }) {
           </div>
           <div id={item.id} className="collapse">
             <div className="card-body">
-              {item.desc}
+              {item.desc}  <Link to={`/lookup/community/node/${item.id}`}>see more</Link>
             </div>
           </div>
         </div>

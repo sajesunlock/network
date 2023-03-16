@@ -55,6 +55,8 @@ export default function Lookup() {
     <div className="container-fluid">
         <div className="row mt-3 p-0">
             <div className="col-md-8">
+            <h5>cartographie du reseau</h5>
+              <hr />
                 <Map
                   community={community}
                   MyComponent={MyComponent}

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Network from "../static/img/network.png";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <div className="container">
       <h1 className="display-4"> Observatoire des Réseaux Communautaires</h1>
       <p className="lead">
-        <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <Link className="btn btn-primary btn-lg" to="/about" role="button">Learn more</Link>1
       </p>
       </div>
       </div>
