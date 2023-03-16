@@ -6,7 +6,7 @@ export default function About() {
       <div className="row">
         <div className="col-md-8 col-12">
           <h2>Hi, we&lsquo;re ORC.</h2>
-          <p style={{ fontSize: "2rem" }} className="p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <p className="pt-2 pl-3 text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
              Animi suscipit cupiditate vitae dolore quibusdam ipsam mollitia aliquam
              at ea facilis assumenda quasi nulla,
             maxime consequuntur quia ex nesciunt rem ipsum. Dolore explicabo

@@ -18,6 +18,10 @@
     color: #fff
 }
 
+.text-about{
+    font-size: 2rem;
+}
+
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 400px) {
     .display-4{
@@ -30,6 +34,13 @@
     }
     .leaflet-container {
         height: 100vw;
+    }
+    .text-about{
+        font-size: 1.5rem;
+    }
+    .dropdown{
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
   }
 
