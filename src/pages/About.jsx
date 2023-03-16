@@ -31,8 +31,8 @@ export default function About() {
         <div className="col-md-4 mt-4">
           <h2>Our Impact</h2>
             <div className="col-12 mb-4">
-                <h6>We believe in sharing, in giving and in doing the right thing:
-                </h6>
+                <h5>We believe in sharing, in giving and in doing the right thing:
+                </h5>
             </div>
 
               <div className="col-12 pl-4">
