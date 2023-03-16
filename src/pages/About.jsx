@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container mt-5 rounded bg-light p-5">
+    <div className="container rounded bg-light p-5">
       <div className="row">
         <div className="col-md-8 col-12">
           <h2>Hi, we&lsquo;re ORC.</h2>

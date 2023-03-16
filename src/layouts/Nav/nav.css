@@ -23,7 +23,7 @@
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .display-4{
         font-family: "Montserrat", sans-serif;
         line-height: 1.4;
