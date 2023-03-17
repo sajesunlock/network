@@ -1,4 +1,4 @@
-import { collection, getDocs, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
+import { collection, getDocs, getDoc, addDoc, updateDoc, doc, deleteDoc } from "firebase/firestore";
 import db from "../firebase/firebaseConfig";
 
 async function getData(name) {
@@ -16,7 +16,7 @@ async function setData(name, data) {
 
 async function updateData(name, id, data) {
   const update = doc(db, name, id);
-  await updateData(update, data);
+  await updateDoc(update, data);
 }
 
 async function deleteData(name, id) {

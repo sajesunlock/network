@@ -13,7 +13,7 @@ export default function Home() {
       <div className="container">
       <h1 className="display-4"> Observatoire des Réseaux Communautaires</h1>
       <p className="lead">
-        <Link className="btn btn-primary btn-lg" to="/about" role="button">Learn more</Link>1
+        <Link className="btn btn-primary btn-lg" to="/about" role="button">Learn more</Link>
       </p>
       </div>
       </div>
