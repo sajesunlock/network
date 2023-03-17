@@ -11,7 +11,7 @@ export default function Contact() {
               <h2 className=" mb-2 titleSlug" style={{ paddingTop: "20px" }}>{t("contact.title")}</h2>
               <p className="mt-3 mb-3 infotext">
               <Trans i18nKey="contact.sub">
-                Vous souhaitez nous contacter? Vous pouvez soit nous envoyer un courriel à <span className="email">contact@orc.org.ht</span> ou utiliser le numéro +50934166297.
+                Vous souhaitez nous contacter? Vous pouvez soit nous envoyer un courriel à <span className="email">contact@orc.org.ht</span> ou utiliser le numéro +50937027275.
               </Trans>
               </p>
           </div>

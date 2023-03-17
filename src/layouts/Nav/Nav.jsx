@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { Link, useNavigate } from "react-router-dom";
-import { useTranslation, Trans } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import { auth } from "../../firebase/firebaseConfig";
 
@@ -54,14 +54,14 @@ const handleLogout = () => {
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style={{ maxHeight: 100 }}>
                 <li className="nav-item active">
-                  <Link className="nav-link" to="/about">A propos de nous <span className="sr-only">(current)</span></Link>
+                  <Link className="nav-link" to="/about">{t("nav.about")} <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item active">
-                  <Link to="/lookup/community" className="nav-link" href="#">Où nous trouver</Link>
+                  <Link to="/lookup/community" className="nav-link" href="#">{t("nav.ou")}</Link>
                 </li>
 
                 <li className="nav-item active">
-                  <Link to="/contact" className="nav-link ">Contactez nous</Link>
+                  <Link to="/contact" className="nav-link ">{t("nav.contact")}</Link>
                 </li>
                 {/**
                 <li className="nav-item dropdown">

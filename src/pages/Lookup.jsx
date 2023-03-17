@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 import { useMap } from "react-leaflet";
+import { useTranslation } from "react-i18next";
 import { auth } from "../firebase/firebaseConfig";
 import db from "../service/dataService";
 import AddCommunityForm from "../components/AddCommunityForm";
@@ -14,6 +15,8 @@ export default function Lookup() {
   const [isLogging, setisLogging] = useState(false);
   const [lng, setLng] = useState(null);
   const [lat, setLat] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   function MyComponent() {
     const map = useMap();
@@ -55,7 +58,7 @@ export default function Lookup() {
     <div className="container-fluid">
         <div className="row mt-3 p-0">
             <div className="col-md-8">
-            <h5>cartographie du reseau</h5>
+            <h4>{t("lookup.title")}</h4>
               <hr />
                 <Map
                   community={community}

@@ -1,11 +1,13 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t, i18n } = useTranslation();
   return (
     <div className="container rounded bg-light p-5">
       <div className="row">
         <div className="col-md-8 col-12">
-          <h2>Hi, we&lsquo;re ORC.</h2>
+          <h2>{ t("about.title1")}</h2>
           <p className="pt-2 pl-3 text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
              Animi suscipit cupiditate vitae dolore quibusdam ipsam mollitia aliquam
              at ea facilis assumenda quasi nulla,
@@ -29,7 +31,7 @@ export default function About() {
           />
         </div>
         <div className="col-md-4 mt-4">
-          <h2>Our Impact</h2>
+          <h2>{t("about.title2")}</h2>
             <div className="col-12 mb-4">
                 <h5>We believe in sharing, in giving and in doing the right thing:
                 </h5>

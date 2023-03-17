@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation, Trans } from "react-i18next";
 
 import Network from "../static/img/network.png";
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
   return (
     <div className="container-fluid">
       <div className="row">
@@ -13,14 +15,15 @@ export default function Home() {
       <div className="container">
       <h1 className="display-4"> Observatoire des Réseaux Communautaires</h1>
       <p className="lead">
-        <Link className="btn btn-primary btn-lg" to="/about" role="button">Learn more</Link>
+        <Link className="btn btn-primary btn-lg" to="/about" role="button">{t("nav.button")}</Link>
       </p>
       </div>
       </div>
         <div className="row m-0 p-0">
         <div className="col-md-6 col-12">
-          <h1 className="titre mb-3 mt-3">C’est quoi un Réseau Communautaire!</h1>
-          <p className="lead">
+          <h1 className="titre mb-3 mt-3">{t("home.main.section1.title")}</h1>
+          <Trans i18nKey="home.main.section1.desc">
+          <p className="">
           Les réseaux communautaires se réfèrent aux infrastructures de télécommunications
            déployées et exploitées par un groupe local pour répondre à ses propres besoins
            de communication[1]. Ils sont le résultat de personnes travaillant ensemble,
@@ -53,6 +56,7 @@ export default function Home() {
            à la fibre optique ou au WIFI (IEEE 802.11). C’est un réseau conçu par la communauté
            et pour la communauté.
           </p>
+          </Trans>
         </div>
         <div className="col-12 col-md-6">
           <img src={Network} alt="" width="100%" height="100%" />
@@ -66,7 +70,8 @@ export default function Home() {
           />
         </div>
         <div className="col-md-6 col-12">
-        <h1 className="titre mb-3 mt-3">Intérêt des réseaux communautaires sans fil </h1>
+        <h1 className="titre mb-3 mt-3">{t("home.main.section2.title")} </h1>
+        <Trans i18nKey="home.main.section2.desc">
           <p className="lead">
           Internet fait du monde un endroit plus agréable à vivre 2 où Il crée
             ou facilite le développement économique,
@@ -78,6 +83,7 @@ export default function Home() {
             depuis 2012 et aussi par certains pays comme la France. Pourtant, près de la moitié
            de la population mondiale est encore déconnectée en 2020.
           </p>
+        </Trans>
         </div>
         <div className="col-md-6 col-12">
           <h1>d</h1>

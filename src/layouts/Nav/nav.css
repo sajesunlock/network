@@ -18,6 +18,15 @@
     color: #fff
 }
 
+p {
+    color: inherit;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-family: hind,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 5px;
+}
+
 .text-about{
     font-size: 2rem;
 }
@@ -51,8 +60,8 @@
     font-size: 1.5rem;
 }
 p{
-    font-weight: 350;
-    font-size: 1.5rem;
+    font-weight: 100;
+    font-size: 1rem;
 }
 .jumbotron{
     background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
