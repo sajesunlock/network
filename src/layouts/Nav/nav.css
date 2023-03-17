@@ -38,7 +38,6 @@ p {
         line-height: 1.4;
         font-weight: 600;
         color: #fff;
-       
         font-size:1.5rem;
     }
     .leaflet-container {
@@ -67,6 +66,7 @@ p{
     background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
     background-size:cover;
     width: auto;
+    opacity: 0.7;
 }
 
 /* dropdown menu */

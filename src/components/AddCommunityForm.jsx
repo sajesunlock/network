@@ -7,6 +7,9 @@ export default function AddCommunityForm({ lat, lng }) {
     const [community, setCommunity] = useState({
         name: "",
         desc: "",
+        email: "",
+        number: "",
+        address: "",
     });
 
     const handleChange = (e) => {
@@ -41,9 +44,21 @@ export default function AddCommunityForm({ lat, lng }) {
             <input type="text" className="form-control" value={lng} placeholder="Longitude" />
           </div>
         </div>
-        <div className="custom-file mt-3">
+        <div className="custom-file mt-3 mb-3">
           <input type="file" className="custom-file-input" multiple id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" />
           <label className="custom-file-label" htmlFor="inputGroupFile01">Choose file</label>
+        </div>
+        <div className="row">
+          <div className="col">
+            <input type="text" className="form-control" name="email" onChange={handleChange} placeholder="email" />
+          </div>
+          <div className="col">
+            <input type="text" className="form-control" name="number" onChange={handleChange} placeholder="phone number" />
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleDropdownFormEmail2">Address</label>
+          <input type="text" className="form-control" name="address" onChange={handleChange} id="exampleDropdownFormEmail2" placeholder="address" />
         </div>
         <div className="form-group mt-3">
           <label>Desc</label>

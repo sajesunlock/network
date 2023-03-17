@@ -23,6 +23,22 @@ export default function ProfileCommunity({ data }) {
                         </p>
                     <hr />
                     </div>
+                    <div className="col-6">
+                    <p><span><i className="fa fa-envelope mr-3" aria-hidden="true" /></span> {data.email}</p>
+                    <p> <span><i className="fa fa-location-arrow mr-3" aria-hidden="true" /></span> {data.address}</p>
+                    <p><span><i className="fa fa-phone mr-3" aria-hidden="true" /></span> {data.number}</p>
+                    </div>
+                    <div className="col-6">
+                    Profil technique: <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Numquam natus eius, quam fugit ratione dolorum.
+                                      </p>
+                                      <hr />
+                    Equipe technique:   <ul className="float-right">
+                                            <li className="text-light">Junior Duveau</li>
+                                            <li className="text-light">Peterson Saint-aime</li>
+                                            <li className="text-light">Wislin Dufort</li>
+                                        </ul>
+                    </div>
                     <ListImages />
                 </div>
             </div>

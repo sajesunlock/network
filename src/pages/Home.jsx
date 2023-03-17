@@ -13,7 +13,7 @@ export default function Home() {
       <div className="col-12 p-0">
       <div className="jumbotron">
       <div className="container">
-      <h1 className="display-4"> Observatoire des Réseaux Communautaires</h1>
+      <h1 className="display-4" style={{ opacity: "1 !important" }}> Observatoire des Réseaux Communautaires</h1>
       <p className="lead">
         <Link className="btn btn-primary btn-lg" to="/about" role="button">{t("nav.button")}</Link>
       </p>

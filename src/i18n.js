@@ -98,8 +98,10 @@ i18n
             },
             title2: {
                 title: "This website",
-                part1: "Delivery",
-                part2: "Submit your manuscript",
+                part1: "Promoters and Governance",
+                part2: "Regulation",
+                part3: "Funding",
+                part4: "Particularity",
             },
             title3: {
                 title: "Company Information",
@@ -220,8 +222,10 @@ i18n
               },
               title2: {
                   title: "Ce site Web",
-                  part1: "Livraison",
-                  part2: "Déposer votre manuscrit",
+                  part1: "Promoteurs et Gouvernance",
+                  part2: "Régulation",
+                  part3: "Financement",
+                  part4: "Particularité",
               },
               title3: {
                   title: "Informartion d'entreprise",

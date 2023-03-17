@@ -18,16 +18,18 @@ function Footer({ t, i18n }) {
                         <a href><li className="titre">{t("footer.title1.title")}</li></a>
                         <li className="mt-5 mb-5">{t("footer.title1.part1")}</li>
                         <hr />
-                        <li><span><i className="fa fa-envelope-o " aria-hidden="true" /></span> <a href="mailto:contact@editionzbooks.com" className="text-line">{t("footer.title1.part2")}</a></li>
+                        <li><span><i className="fa fa-envelope-o " aria-hidden="true" /></span> <a href="mailto:contact@orc.org.ht" className="text-line">{t("footer.title1.part2")}</a></li>
                         <hr />
-                        <li> <span><i className="fa fa-phone " aria-hidden="true" /></span> <a className="text-line" href="tel:+50934166297">{t("footer.title1.part3")}</a></li>
+                        <li> <span><i className="fa fa-phone " aria-hidden="true" /></span> <a className="text-line" href="tel:+50937027275">{t("footer.title1.part3")}</a></li>
                       </ul>
                     </div>
                     <div className="col-md-4 col-6 developer">
                       <ul>
                         <li className="titre">{t("footer.title2.title")}</li>
-                        <li className="mt-5 "> <Link className="text-line" to="/shipping">{t("footer.title2.part1")}</Link></li>
-                        <li className="mt-4 "><Link className="text-line" to="/add/manuscrit">{t("footer.title2.part2")}</Link></li>
+                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part2")}</Link></li>
+                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part3")}</Link></li>
+                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part4")}</Link></li>
+                        <li className="mt-5 "> <Link className="text-line" to="/">{t("footer.title2.part1")}</Link></li>
                       </ul>
                     </div>
                     <div className="col-md-4  col-6 resource">
