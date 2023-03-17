@@ -9,7 +9,7 @@ export default function ProfileCommunity({ data }) {
             <div className="col-12 bg-dark text-light rounded-lg">
                 <div className="row">
                     <div className="col-md-4 col-12 mt-3">
-                        <img className="rounded-circle col-12" src="https://www.shutterstock.com/image-vector/creative-network-concept-logo-design-260nw-633479948.jpg" alt="" />
+                        <img className="rounded-circle col-12" src={data.url ? data.url : "https://png.pngtree.com/templates/20180906/network-logo-template-png_31170.jpg"} alt="" />
                     </div>
                     <div className="col-md-8 col-12 display-4 mt-5">
                         {data.name}
