@@ -58,7 +58,12 @@ export default function Home() {
           <img src={Network} alt="" width="100%" height="100%" />
         </div>
         <div className="col-12 col-md-6">
-          <img src="https://afcomnet.afroleadership.org/wp-content/uploads/2022/11/Picture-883x500.png" alt="" width="100%" height="100%" />
+          <img
+            src="https://afcomnet.afroleadership.org/wp-content/uploads/2022/11/Picture-883x500.png"
+            alt=""
+            width="100%"
+            height="100%"
+          />
         </div>
         <div className="col-md-6 col-12">
         <h1 className="titre mb-3 mt-3">Intérêt des réseaux communautaires sans fil </h1>
@@ -73,6 +78,18 @@ export default function Home() {
             depuis 2012 et aussi par certains pays comme la France. Pourtant, près de la moitié
            de la population mondiale est encore déconnectée en 2020.
           </p>
+        </div>
+        <div className="col-md-6 col-12">
+          <h1>d</h1>
+          <p>d</p>
+        </div>
+        <div className="col-md-6 col-12">
+          <img
+            src="https://images.unsplash.com/photo-1606814540563-5c02d62fd409?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjI3MDJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzkwMTY2NjY&ixlib=rb-4.0.3&q=80&w=1080"
+            alt=""
+            width="100%"
+            height="100%"
+          />
         </div>
         </div>
       </div>
