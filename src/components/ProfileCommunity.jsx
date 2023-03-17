@@ -23,12 +23,12 @@ export default function ProfileCommunity({ data }) {
                         </p>
                     <hr />
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 col-md-6">
                     <p><span><i className="fa fa-envelope mr-3" aria-hidden="true" /></span> {data.email}</p>
                     <p> <span><i className="fa fa-location-arrow mr-3" aria-hidden="true" /></span> {data.address}</p>
                     <p><span><i className="fa fa-phone mr-3" aria-hidden="true" /></span> {data.number}</p>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6 col-12">
                     Profil technique: <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Numquam natus eius, quam fugit ratione dolorum.
                                       </p>

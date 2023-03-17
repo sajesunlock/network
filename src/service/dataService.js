@@ -10,7 +10,6 @@ async function getData(name) {
 // getData(db);
 
 async function setData(name, data) {
-  console.log("sasas");
   const add = addDoc(collection(db, name), data);
 }
 

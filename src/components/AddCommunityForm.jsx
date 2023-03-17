@@ -1,9 +1,14 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from "react";
-
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { storage } from "../firebase/firebaseConfig";
 import { setData } from "../service/dataService";
 
 export default function AddCommunityForm({ lat, lng }) {
+  const [progrss, setProgrss] = useState(0);
+  const [isLoading, setIsLoading] = useState();
+  const [file, setFile] = useState();
+  const [url, setUrl] = useState();
     const [community, setCommunity] = useState({
         name: "",
         desc: "",
@@ -20,15 +25,51 @@ export default function AddCommunityForm({ lat, lng }) {
             long: lng,
         });
     };
+    const onFileUpload = () => {
+      if (!file) return;
+      setIsLoading(true);
+      const storageRef = ref(storage, `/files/${file.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, file);
 
-    const handleSubmit = () => {
+      // eslint-disable-next-line function-paren-newline
+      uploadTask.on("state_changed", (snapshot) => {
+          const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+          setProgrss(progress);
+      }, (err) => {
+          console.log(err);
+          setIsLoading(false);
+      }, () => {
+              getDownloadURL(uploadTask.snapshot.ref)
+                  .then((url1) => {
+                      setUrl(url1);
+                      setCommunity({
+                        ...community,
+                        url: url1,
+                      });
+                      setIsLoading(false);
+                  });
+      });
+    };
+
+  const onFileChange = (e) => {
+      setFile(e.target.files[0]);
+      e.preventDefault();
+  };
+
+  const handleSubmit = async () => {
+        await onFileUpload();
+        console.log(url);
         setData("community", community);
         alert("community has add !");
         setCommunity({
           name: "",
           desc: "",
+          email: "",
+          number: "",
+          address: "",
       });
     };
+
   return (
     <div className="p-4 mt-0">
         <div className="form-group">
@@ -45,8 +86,8 @@ export default function AddCommunityForm({ lat, lng }) {
           </div>
         </div>
         <div className="custom-file mt-3 mb-3">
-          <input type="file" className="custom-file-input" multiple id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" />
-          <label className="custom-file-label" htmlFor="inputGroupFile01">Choose file</label>
+          <input type="file" className="custom-file-input" onChange={onFileChange} id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" />
+          <label className="custom-file-label" htmlFor="inputGroupFile01">{file ? file.name : "Choose file"}</label>
         </div>
         <div className="row">
           <div className="col">
