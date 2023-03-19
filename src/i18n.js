@@ -71,8 +71,14 @@ i18n
                 </p>`,
               },
               section3: {
-                title: "",
-                desc: "",
+                title: "Some examples of community networks.",
+                desc: `<p> The Internet Society (ISOC), in its mission to reduce the digital divide, in collaboration with certain local partners, has already supported nearly thirty community networks around the world. His mantra is for the community, with the community, by the community. Below are some examples: </p>
+
+                <p>  Net : is a bottom-up, citizen-administered, technological and economic project, with the objective of creating a free, open and neutral telecommunications network based on a common model.</p>
+                <p>  Nepal Wireless Project : Nepal Wireless Project is a non-profit initiative located in remote rural areas of Nepal. It was launched in 2002 to bring communication services to villages in Myagdi district and to find ways to bridge the digital divide between urban and rural areas in Nepal.</p>
+                <p> NYCMesh  : Some projects are located in underserved urban areas of developed countries. In 2019, as part of the Beyond the Net grant program, the local New York chapter of the Internet Society set up a community network to serve an unconnected community (see details here).</p>
+                <p> Tusheti, Georgia: The Internet Society has partnered with its Georgia Chapter and several Georgian Internet organizations to connect the remote and mountainous region of Tusheti to the Internet. The project was launched in September 2017, opening new opportunities for tourism and cultural preservation, providing an essential communication channel for health care and potential emergencies (read more here).</p>
+                <p> Le réseau sans fil de Mankosi : in South Africa, the people of Mankosi set up a wireless community network to serve 12 villages with more than 6,000 inhabitants who were completely disconnected. A BBC report tells us about it here https://www.youtube.com/watch?v=R9u-hfxAeBo</p>`,
               },
             },
           },
@@ -195,14 +201,20 @@ i18n
                   </p>`,
                 },
                 section3: {
-                  title: "",
-                  desc: "",
+                  title: "Quelques exemples de réseaux communautaires.",
+                  desc: `<p> L’Internet Society (ISOC), dans sa mission de réduction de la fracture numérique, en collaborations avec certains partenaires locaux, a soutenu déjà près d’une trentaine de réseaux communautaires à travers le monde. Son mantra est pour la communauté, avec la communauté, par la communauté. Ci-dessous quelques exemples : </p>
+
+                  <p> Net est un projet bottom-up, administré par les citoyens, technologique et économique, ayant pour objectif de créer un réseau de télécommunication libre, ouvert et neutre basé sur un modèle commun.</p>
+                  <p>  Nepal Wireless Project : Nepal Wireless Project est une initiative à but non lucratif située dans les zones rurales reculées du Népal. Il a été lancé en 2002 pour apporter des services de communication aux villages du district de Myagdi et pour trouver des moyens de réduire la fracture numérique entre les zones urbaines et rurales du Népal.</p>
+                  <p> NYCMesh  : Certains projets sont situés dans des zones urbaines mal desservies des pays développés. En 2019, dans le cadre du programme de subvention Beyond the Net, le chapitre local New York de Internet Society a mis en place un réseau communautaire pour desservir une communauté non connectée (voir détails ici).</p>
+                  <p> Tusheti , Géorgie:Internet Society s’est associée à son chapitre géorgien et à plusieurs organisations Internet géorgiennes pour relier la région reculée et montagneuse de Tusheti à Internet. Le projet a été lancé en septembre 2017, ouvrant de nouvelles opportunités pour le tourisme et la préservation culturelle, fournissant un canal de communication essentiel pour les soins de santé et les situations d’urgence potentielles (en savoir plus ici).</p>
+                  <p> Le réseau sans fil de Mankosi : en Afrique du Sud, les habitants de Mankosi ont mis en place un réseau communautaire sans fil pour desservir 12 villages de plus de 6.000 habitants qui étaient complètement déconnectés. Un reportage de BBC nous en parle ici https://www.youtube.com/watch?v=R9u-hfxAeBo </p>`,
                 },
               },
             },
             contact: {
               title: "Contactez-nous",
-              sub: "Vous souhaitez nous contacter? Vous pouvez soit nous envoyer un courriel à <1 class='email'>contact@editionzbooks.com </1> ou utiliser le numéro +50934166297.",
+              sub: "Vous souhaitez nous contacter? Vous pouvez soit nous envoyer un courriel à <1 class='email'>contact@orc.org.ht </1> ou utiliser le numéro +50937027275.",
               formTitle: "FORMULAIRE DE CONTACT",
               button: "Envoyer",
               name: "votre nom svp",

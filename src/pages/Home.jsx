@@ -86,8 +86,39 @@ export default function Home() {
         </Trans>
         </div>
         <div className="col-md-6 col-12">
-          <h1>d</h1>
-          <p>d</p>
+          <h1 className="titre mb-3 mt-3">{t("home.main.section3.title")}</h1>
+          <Trans i18nKey="home.main.section3.desc">
+          <p> The Internet Society (ISOC), in its mission to reduce the digital divide,
+            in collaboration with certain local partners,
+            has already supported nearly thirty community networks around the world.
+            His mantra is for the community, with the community,
+            by the community. Below are some examples:
+          </p>
+          <p> <b> net </b> is a bottom-up, citizen-administered,
+          technological and economic project, with the objective of creating a free,
+          open and neutral telecommunications network based on a common model.
+          </p>
+          <p> <b> Nepal Wireless Project </b>: Nepal Wireless Project is a non-profit
+          initiative located in remote rural areas of Nepal.
+          It was launched in 2002 to bring communication services to villages in Myagdi
+          district and to find ways to bridge the digital divide between urban and rural
+          areas in Nepal.
+          </p>
+          <p><b> NYCMesh </b> : Some projects are located in underserved urban areas
+          of developed countries.
+           In 2019, as part of the Beyond the Net grant program,
+           the local New York chapter of the Internet Society set up a community
+            network to serve an unconnected community (see details here).
+          </p>
+          <p> <b>Tusheti </b>, Georgia: The Internet Society has partnered
+            with its Georgia Chapter and several Georgian Internet organizations
+            to connect the remote and mountainous region of Tusheti to the Internet.
+            The project was launched in September 2017, opening new opportunities for
+            tourism and cultural preservation, providing an essential communication channel
+            for health care and potential emergencies (read more here).
+          </p>
+          <p> <b>Le réseau sans fil de Mankosi </b>: in South Africa, the people of Mankosi set up a wireless community network to serve 12 villages with more than 6,000 inhabitants who were completely disconnected. A BBC report tells us about it here https://www.youtube.com/watch?v=R9u-hfxAeBo</p>
+          </Trans>
         </div>
         <div className="col-md-6 col-12">
           <img

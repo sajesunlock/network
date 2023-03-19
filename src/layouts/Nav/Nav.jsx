@@ -48,6 +48,16 @@ const handleLogout = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" width="60" height="60" className="d-inline-block align-top mr-1 p-1 bg-light rounded-circle" alt="" />
                 ORC
             </Link>
+            <div className="lang" data-toggle="collapse" data-target="#navb" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <div className="col-md-1 col-2 nav-icon m-0 pr-0 pl-2 dropdown bg-light rounded">
+                <i className="fa fa-2x fa-language bg-light p-2 " aria-hidden="true" />
+                <div className="dropdown-content">
+                  <div className={i18n.language === "fr" ? "pt-3 pl-2 pb-3 pr-5 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("fr")}>Fr</div>
+                  <hr className="m-0" />
+                  <div className={i18n.language === "en" ? "pt-3 pb-3 pl-2 pr-4 btn-primary" : "pt-3 pb-3 pl-2"} style={{ cursor: "pointer" }} onClick={() => i18n.changeLanguage("en")}>Eng</div>
+                </div>
+              </div>
+            </div>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
             </button>
