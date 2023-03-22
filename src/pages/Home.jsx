@@ -19,7 +19,7 @@ export default function Home() {
       </p>
       </div>
       </div>
-        <div className="row m-0 p-0">
+        <div className="row m-4 p-4 rounded bg-light">
         <div className="col-md-6 col-12">
           <h1 className="titre mb-3 mt-3">{t("home.main.section1.title")}</h1>
           <Trans i18nKey="home.main.section1.desc">
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="col-12 col-md-6">
           <img src={Network} alt="" width="100%" height="100%" />
         </div>
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mt-5">
           <img
             src="https://afcomnet.afroleadership.org/wp-content/uploads/2022/11/Picture-883x500.png"
             alt=""
@@ -69,7 +69,7 @@ export default function Home() {
             height="100%"
           />
         </div>
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12 mt-5">
         <h1 className="titre mb-3 mt-3">{t("home.main.section2.title")} </h1>
         <Trans i18nKey="home.main.section2.desc">
           <p className="lead">
@@ -85,7 +85,7 @@ export default function Home() {
           </p>
         </Trans>
         </div>
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12 mt-5">
           <h1 className="titre mb-3 mt-3">{t("home.main.section3.title")}</h1>
           <Trans i18nKey="home.main.section3.desc">
           <p> The Internet Society (ISOC), in its mission to reduce the digital divide,
@@ -120,7 +120,7 @@ export default function Home() {
           <p> <b>Le réseau sans fil de Mankosi </b>: in South Africa, the people of Mankosi set up a wireless community network to serve 12 villages with more than 6,000 inhabitants who were completely disconnected. A BBC report tells us about it here https://www.youtube.com/watch?v=R9u-hfxAeBo</p>
           </Trans>
         </div>
-        <div className="col-md-6 col-12">
+        <div className="col-md-6 col-12 mt-5">
           <img
             src="https://images.unsplash.com/photo-1606814540563-5c02d62fd409?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjI3MDJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzkwMTY2NjY&ixlib=rb-4.0.3&q=80&w=1080"
             alt=""

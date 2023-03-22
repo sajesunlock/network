@@ -8,14 +8,14 @@ export default function About() {
       <div className="row">
         <div className="col-md-8 col-12">
           <h2>{ t("about.title1")}</h2>
-          <p className="pt-2 pl-3 text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <p className="pt-2 pl-3 mt-5 text-about">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
              Animi suscipit cupiditate vitae dolore quibusdam ipsam mollitia aliquam
              at ea facilis assumenda quasi nulla,
             maxime consequuntur quia ex nesciunt rem ipsum. Dolore explicabo
              dolores nesciunt nobis totam, odit velit excepturi distinctio.
           </p>
         </div>
-        <div className="col-md-4 col-12">
+        <div className="col-md-4 col-12 mt-5">
           <img
             src="https://cdn-icons-png.flaticon.com/512/4350/4350908.png"
             alt=""

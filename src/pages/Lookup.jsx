@@ -56,7 +56,7 @@ export default function Lookup() {
   }, []);
   return (
     <div className="container-fluid">
-        <div className="row mt-3 p-0">
+        <div className="row mt-3 p-5 rounded bg-light">
             <div className="col-md-8">
             <h4>{t("lookup.title")}</h4>
               <hr />
@@ -65,7 +65,7 @@ export default function Lookup() {
                   MyComponent={MyComponent}
                 />
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-5">
               <ItemCommunity community={community} />
               <hr />
               <h3 className="titre">Ajouter community</h3>
