@@ -19,14 +19,14 @@ export default function Map({ community, MyComponent }) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MyComponent />
+      {<MyComponent /> ? <MyComponent /> : null}
       {community ? community.map((itemPosition) => (
         <Marker position={[itemPosition.lat, itemPosition.long]}>
           <Popup>
-          <Link to={`node/${itemPosition.id}`}>{itemPosition.name} <br /></Link>
+          <Link to={`/lookup/community/node/${itemPosition.id}`}>{itemPosition.name} <br /></Link>
           </Popup>
         </Marker>
-      )) : ""}
+      )) : null}
     </MapContainer>
   );
 }

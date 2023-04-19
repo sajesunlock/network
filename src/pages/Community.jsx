@@ -27,6 +27,9 @@ export default function Community() {
   getItem();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   console.log(communityId);
   return (
     <div className="container-fuild">

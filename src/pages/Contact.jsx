@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 import FormContact from "../components/FormContact";
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container-fluid contact mt-navbar m-0 p-0">
         <div className="col-md-12 col-12 mt-0">

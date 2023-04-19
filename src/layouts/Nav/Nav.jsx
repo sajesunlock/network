@@ -67,7 +67,7 @@ const handleLogout = () => {
                   <Link className="nav-link" to="/about">{t("nav.about")} <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item active">
-                  <Link to="/lookup/community" className="nav-link" href="#">{t("nav.ou")}</Link>
+                  <Link to="/community/news" className="nav-link">{t("nav.ou")}</Link>
                 </li>
 
                 <li className="nav-item active">

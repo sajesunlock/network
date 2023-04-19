@@ -21,64 +21,33 @@ i18n
         translation: {
           nav: {
              contact: "Contact us",
-             ou: "Find us",
+             ou: "RC News",
              about: "About us",
-             button: "Learn more",
+             button: "RC News",
           },
           home: {
             main: {
               section1: {
                 title: "What is a Community Network!",
-                desc: `<p className="lead">
-                  Community networks refer to the telecommunications infrastructure deployed
-                   and operated by a local group to meet its own communication needs[1].
-                    They are the result of people working together, combining their resources,
-                  uniting their efforts and coming together to bridge the absence or gaps in connectivity.
-                </p>
-                <p className="lead">
-                The mode of management and the conditions of access are entirely autonomous and
-                can be defined as they wish according to the resources and partnerships at their disposal.
-                </p>
-                <p className="lead">
-                Concretely, community networks can, in general,
-                cover various needs such as access to the telecommunications network,
-                 access to the Internet or may be a local radio and/or television or other.
-                </p>
-                <p className="lead">
-                With regard to wireless community networks with the Internet,
-                apart from access to web resources and services which are
-                among others access to e-commerce and tele-health services,
-                distance learning, social and political engagement, government services and public safety information,
-                community networks fundamentally promote connectivity to populations excluded because of their geographical areas,
-                economic power or absence
-                telecommunications infrastructure.
-                </p>
-                <p className="lead">
-                These networks make the Internet available to the target community through cables, fiber optics or WIFI (IEEE 802.11).
-                It is a network designed by the community and for the community.
-                </p>`,
+                desc: `
+                  Community networks refer to the telecommunications infrastructure deployed and operated by a local group to meet its own communication needs[1]. They are the result of people working together, combining their resources, joining forces and coming together to bridge the absence or gaps in connectivity.`,
               },
               section2: {
                 title: "Interest of wireless community networks",
-                desc: `<p className="lead">
+                desc: `
                 The Internet makes the world a better place to live 2 where He creates
                 or facilitates economic development, supports small and medium enterprises
                 (SMEs) and creates broader economic opportunities for all.
-                </p>
-                <p className="lead">
-                Access to the Internet is a fundamental human right recognized by the United Nations since 2012 and
+                `,
+                desc2:
+                `Access to the Internet is a fundamental human right recognized by the United Nations since 2012 and
                 also by certain countries such as France. Yet nearly half of the world's population is still offline in 2020.
                 </p>`,
               },
               section3: {
-                title: "Some examples of community networks.",
-                desc: `<p> The Internet Society (ISOC), in its mission to reduce the digital divide, in collaboration with certain local partners, has already supported nearly thirty community networks around the world. His mantra is for the community, with the community, by the community. Below are some examples: </p>
-
-                <p>  Net : is a bottom-up, citizen-administered, technological and economic project, with the objective of creating a free, open and neutral telecommunications network based on a common model.</p>
-                <p>  Nepal Wireless Project : Nepal Wireless Project is a non-profit initiative located in remote rural areas of Nepal. It was launched in 2002 to bring communication services to villages in Myagdi district and to find ways to bridge the digital divide between urban and rural areas in Nepal.</p>
-                <p> NYCMesh  : Some projects are located in underserved urban areas of developed countries. In 2019, as part of the Beyond the Net grant program, the local New York chapter of the Internet Society set up a community network to serve an unconnected community (see details here).</p>
-                <p> Tusheti, Georgia: The Internet Society has partnered with its Georgia Chapter and several Georgian Internet organizations to connect the remote and mountainous region of Tusheti to the Internet. The project was launched in September 2017, opening new opportunities for tourism and cultural preservation, providing an essential communication channel for health care and potential emergencies (read more here).</p>
-                <p> Le réseau sans fil de Mankosi : in South Africa, the people of Mankosi set up a wireless community network to serve 12 villages with more than 6,000 inhabitants who were completely disconnected. A BBC report tells us about it here https://www.youtube.com/watch?v=R9u-hfxAeBo</p>`,
+                title: "RC around the world.",
+                desc: "Around the world, people are coming together to create and maintain their own connections to the Internet by setting up community networks to connect the nearly 3 billion who are not yet connected.",
+                decs2: "Within countries such as South Africa, Argentina, Zimbabwe, Colombia, India, United States, Kyrgyzstan, Georgia have already developed community network initiatives to reach marginalized populations in order to solve their Internet access problems at a low cost. . Read more here",
               },
             },
           },
@@ -97,24 +66,27 @@ i18n
           },
           footer: {
             title1: {
-                title: "Client services",
-                part1: "Help Center",
-                part2: "Email us",
-                part3: "Call us",
+                title: "Us",
+                part1: "About us",
+                part2: "Envoyez-nous un email",
+                part3: "Appelez-nous",
             },
             title2: {
-                title: "This website",
-                part1: "Promoters and Governance",
-                part2: "Regulation",
-                part3: "Funding",
-                part4: "Particularity",
+                title: "RC around the world",
+
             },
             title3: {
-                title: "Company Information",
-                part1: "contact us",
-                part2: "Terms of use",
-                part3: "privacy policy",
+                title: "Regulatory frameworks",
+                part1: "Promoters and Governance",
+                part2: "Regulation",
+                part3: "Particularity",
             },
+            title4: {
+              title: "Funds available",
+              part1: "Internet Society Foundation",
+              part2: "Beyond the Net Large Grant Program",
+              part3: "Connecting the Unconnected Funding Program",
+          },
             form: {
                 title: "JOIN OUR NEWSLETTER",
                 sub: "Sign up to receive the latest updates, features and news!",
@@ -144,71 +116,43 @@ i18n
         translation: {
             nav: {
                contact: "Contactez nous",
-               ou: "Où nous trouver",
+               ou: "Actualités RC",
                about: "A propos de nous",
-               button: "En savoir plus",
+               button: "Actualités RC",
             },
             home: {
               main: {
                 section1: {
                   title: "C’est quoi un Réseau Communautaire!",
-                  desc: `<p className="lead">
+                  desc: `
                   Les réseaux communautaires se réfèrent aux infrastructures de télécommunications
                    déployées et exploitées par un groupe local pour répondre à ses propres besoins
                    de communication[1]. Ils sont le résultat de personnes travaillant ensemble,
                     combinant leurs ressources, unissant leurs efforts et se rapprochant
                      pour combler l’absence
                      ou les lacunes de connectivité.
-                  </p>
-                  <p className="lead">
-                    Le mode de gestion et les conditions d’accès sont entièrement autonome et peuvent être
-                     définis à leur guise selon les ressources
-                     et partenariats dont ils disposent.
-                  </p>
-                  <p className="lead">
-                    Concrètement, les réseaux communautaires peuvent, en général,
-                    couvrir divers besoins comme l’accès au réseau de télécommunication,
-                    l’accès à Internet ou peuvent être une radio et/ou télévision locale ou autre.
-                  </p>
-                  <p className="lead">
-                    En ce qui concerne les réseaux communautaire sans fil avec Internet,
-                    en dehors de l’accès aux ressources et services de la toile qui sont
-                    entre autres l’accès au commerce électronique et aux services de télé-santé,
-                    l’apprentissage à distance, l’engagement social et politique,
-                    les services gouvernementaux et l’information sur la sécurité publique,
-                    les réseaux communautaires favorisent fondamentalement la connectivité aux populations
-                    exclues du fait de leur zones géographique, du pouvoir économique ou d’absence
-                    d’infrastructures de télécommunication.
-                  </p>
-                  <p className="lead">
-                  Ces réseaux rendent l’Internet disponible à la communauté cible grâce aux câbles,
-                   à la fibre optique ou au WIFI (IEEE 802.11). C’est un réseau conçu par la communauté
-                   et pour la communauté.
-                  </p>`,
+                  `,
                 },
                 section2: {
                   title: "Intérêt des réseaux communautaires sans fil",
-                  desc: `<p className="lead">
+                  desc: `
                   Internet fait du monde un endroit plus agréable à vivre 2 où Il crée
                     ou facilite le développement économique,
                    soutient les petites et moyennes entreprises (PME) et
                    crée des opportunités économiques plus larges pour tous.
-                  </p>
-                  <p className="lead">
-                    L’accès à Internet est un droit fondamental de l’homme reconnu par les Nations-Unies
+                  `,
+                  desc2:
+                    `L’accès à Internet est un droit fondamental de l’homme reconnu par les Nations-Unies
                     depuis 2012 et aussi par certains pays comme la France. Pourtant, près de la moitié
                    de la population mondiale est encore déconnectée en 2020.
-                  </p>`,
+                  `,
                 },
                 section3: {
-                  title: "Quelques exemples de réseaux communautaires.",
-                  desc: `<p> L’Internet Society (ISOC), dans sa mission de réduction de la fracture numérique, en collaborations avec certains partenaires locaux, a soutenu déjà près d’une trentaine de réseaux communautaires à travers le monde. Son mantra est pour la communauté, avec la communauté, par la communauté. Ci-dessous quelques exemples : </p>
-
-                  <p> Net est un projet bottom-up, administré par les citoyens, technologique et économique, ayant pour objectif de créer un réseau de télécommunication libre, ouvert et neutre basé sur un modèle commun.</p>
-                  <p>  Nepal Wireless Project : Nepal Wireless Project est une initiative à but non lucratif située dans les zones rurales reculées du Népal. Il a été lancé en 2002 pour apporter des services de communication aux villages du district de Myagdi et pour trouver des moyens de réduire la fracture numérique entre les zones urbaines et rurales du Népal.</p>
-                  <p> NYCMesh  : Certains projets sont situés dans des zones urbaines mal desservies des pays développés. En 2019, dans le cadre du programme de subvention Beyond the Net, le chapitre local New York de Internet Society a mis en place un réseau communautaire pour desservir une communauté non connectée (voir détails ici).</p>
-                  <p> Tusheti , Géorgie:Internet Society s’est associée à son chapitre géorgien et à plusieurs organisations Internet géorgiennes pour relier la région reculée et montagneuse de Tusheti à Internet. Le projet a été lancé en septembre 2017, ouvrant de nouvelles opportunités pour le tourisme et la préservation culturelle, fournissant un canal de communication essentiel pour les soins de santé et les situations d’urgence potentielles (en savoir plus ici).</p>
-                  <p> Le réseau sans fil de Mankosi : en Afrique du Sud, les habitants de Mankosi ont mis en place un réseau communautaire sans fil pour desservir 12 villages de plus de 6.000 habitants qui étaient complètement déconnectés. Un reportage de BBC nous en parle ici https://www.youtube.com/watch?v=R9u-hfxAeBo </p>`,
+                  title: "RC dans le monde",
+                  desc: "Partout dans le monde, les gens s’unissent pour créer et maintenir leurs propres connexions à l’Internet en mettant en place des réseaux  communautaires pour connecter près de 3 milliards qui ne le sont pas encore.",
+                  desc2: `Au sein des pays comme Afrique du Sud, Argentine, Zimbabwe, Colombie, Inde, Etats Unis, Kirghizistan,
+                       Géorgie ont déjà développé des initiatives de réseaux communautaires pour toucher des populations marginalisées
+                       afin de résoudre leurs problèmes d’accès à Internet à un faible coût. Lire plus ici`,
                 },
               },
             },
@@ -227,24 +171,27 @@ i18n
             },
             footer: {
               title1: {
-                  title: "Services à la clientèle",
-                  part1: "Centre d'aide",
+                  title: "Nous",
+                  part1: "a propos de nous",
                   part2: "Envoyez-nous un email",
                   part3: "Appelez-nous",
               },
               title2: {
-                  title: "Ce site Web",
-                  part1: "Promoteurs et Gouvernance",
-                  part2: "Régulation",
-                  part3: "Financement",
-                  part4: "Particularité",
+                  title: "RC dans le monde",
+
               },
               title3: {
-                  title: "Informartion d'entreprise",
-                  part1: "Contactez-nous",
-                  part2: "Conditions d'utilisation",
-                  part3: "politique de confidentialité",
+                  title: " Cadres réglementaires",
+                  part1: "Promoteurs et Gouvernance",
+                  part2: "Régulation",
+                  part3: "Particularité",
               },
+              title4: {
+                title: "Fonds disponibles",
+                part1: "Internet Society Foundation",
+                part2: "Beyond the Net Large Grant Program",
+                part3: "Connecting the Unconnected Funding Program",
+            },
               form: {
                   title: "REJOIGNEZ NOTRE NEWSLETTER",
                   sub: "Inscrivez-vous pour recevoir les dernières mises à jour, fonctionnalités et actualités!",

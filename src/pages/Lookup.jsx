@@ -18,7 +18,7 @@ export default function Lookup() {
 
   const { t, i18n } = useTranslation();
 
-  function MyComponent() {
+function MyComponent() {
     const map = useMap();
 
     map.addEventListener("click", (e) => {
@@ -28,6 +28,10 @@ export default function Lookup() {
 
     return null;
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     useEffect(() => {
         async function getCommunity() {

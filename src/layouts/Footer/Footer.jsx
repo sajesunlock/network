@@ -13,7 +13,7 @@ function Footer({ t, i18n }) {
               <div className="col-md-12 col-12 ">
                 <div className="container">
                   <div className="row">
-                    <div className="col-md-4 col-6 product">
+                    <div className="col-md-3 col-6 product">
                       <ul className="ul">
                         <a href><li className="titre">{t("footer.title1.title")}</li></a>
                         <li className="mt-5 mb-5">{t("footer.title1.part1")}</li>
@@ -23,21 +23,26 @@ function Footer({ t, i18n }) {
                         <li> <span><i className="fa fa-phone " aria-hidden="true" /></span> <a className="text-line" href="tel:+50937027275">{t("footer.title1.part3")}</a></li>
                       </ul>
                     </div>
-                    <div className="col-md-4 col-6 developer">
+                    <div className="col-md-3 col-6 developer">
                       <ul>
                         <li className="titre">{t("footer.title2.title")}</li>
-                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part2")}</Link></li>
-                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part3")}</Link></li>
-                        <li className="mt-4 "><Link className="text-line" to="/">{t("footer.title2.part4")}</Link></li>
-                        <li className="mt-5 "> <Link className="text-line" to="/">{t("footer.title2.part1")}</Link></li>
+
                       </ul>
                     </div>
-                    <div className="col-md-4  col-6 resource">
+                    <div className="col-md-3  col-6 resource">
                       <ul>
                         <li className="titre">{t("footer.title3.title")}</li>
                         <li className="mt-5 "> <Link className="text-line" to="/contact"> {t("footer.title3.part1")} </Link> </li>
                         <li className="mt-4 "><a className="text-line" href="/condition">{t("footer.title3.part2")}</a></li>
                         <li className="mt-4 "><a className="text-line" href="/privacy">{t("footer.title3.part3")}</a></li>
+                      </ul>
+                    </div>
+                    <div className="col-md-3  col-6 resource">
+                      <ul>
+                        <li className="titre">{t("footer.title4.title")}</li>
+                        <li className="mt-5 "> <Link className="text-line" to="https://www.isocfoundation.org/"> {t("footer.title4.part1")} </Link> </li>
+                        <li className="mt-4 "><a className="text-line" href="https://www.isocfoundation.org/grant-programme/beyond-the-net-large-grants/">{t("footer.title4.part2")}</a></li>
+                        <li className="mt-4 "><a className="text-line" href="https://www.internetsociety.org/funding-areas/connecting-the-unconnected/">{t("footer.title4.part3")}</a></li>
                       </ul>
                     </div>
                   </div>

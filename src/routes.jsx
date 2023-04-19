@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Lookup from "./pages/Lookup";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
+import News from "./pages/News";
 
 function RoutesPage() {
   return (
@@ -30,6 +31,7 @@ function RoutesPage() {
 
                   <Route path="/" element={<Home />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/community/news" element={<News />} />
                   <Route path="/about" element={<About />} />
                   <Route path="/lookup/community" element={<Lookup />} />
                   <Route path="/lookup/community/node/:communityId" element={<Community />} />

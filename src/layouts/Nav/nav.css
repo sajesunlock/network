@@ -32,11 +32,40 @@ p {
 }
 
 .text-about{
-    font-size: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.titre1{
+    font-family: serif;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 7em;
+    text-align: center;
+    color: #f1f1f1;
+    opacity: 1;
+    padding-top: 64px;
+}
+.imgBg{
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
+    background-size:cover;
+    width: auto;
+    height: 500px;
+    opacity: 1;
+}
+
+ /* On screens that are 992px or less, set the background color to blue */
+ @media screen and (max-width: 992px) {
+    .container{
+    display: inline-block;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 1%;
+    }
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .display-4{
         font-family: "Montserrat", sans-serif;
         line-height: 1.4;
@@ -57,7 +86,28 @@ p {
     .lang{
         display: inline;
     }
+    .imgBg{
+        background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
+        background-size:cover;
+        width: auto;
+        height: '50%';
+        opacity: 1;
+    }
+
+    .titre1{
+        font-family: serif;
+        line-height: 1;
+        font-weight: 700;
+        font-size: 3em;
+        text-align: center;
+        color: #f1f1f1;
+        opacity: 1;
+        padding-top: 64px;
+    }
+
   }
+
+
 
 .titre{
     font-family: serif;
@@ -68,12 +118,6 @@ p {
 p{
     font-weight: 100;
     font-size: 1rem;
-}
-.jumbotron{
-    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220121132509-02-secure-community-network.jpg?q=h_1688,w_3000,x_0,y_0);
-    background-size:cover;
-    width: auto;
-    opacity: 1;
 }
 
 /* dropdown menu */
