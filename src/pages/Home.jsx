@@ -39,8 +39,8 @@ function MyComponent() {
       <div className="col-12 p-0">
 
         <div className="col-12 imgBg">
-          <h1 className="titre1">Observatoire des Réseaux Communautaires</h1>
-          <button className="btn btn-lg btn-block btn-primary col-md-3 col-6 mt-5 mx-auto">RC News</button>
+          <h1 className="titre1">{ t("headers.title") }</h1>
+          <button className="btn btn-lg btn-block btn-primary col-md-2 col-6 mt-5 mx-auto">{ t("headers.button") }</button>
         </div>
 
         <div className="row m-0 bg-light">
@@ -85,7 +85,7 @@ function MyComponent() {
         <p className="text-center text-about">voici la liste des réseaux communautaires d&#39;Haïti et leurs adresses.</p>
         <Link to="/lookup/community"><h5 className="text-center">Voir tous les Rc en Haïti {">"} </h5></Link>
           <div className="row">
-            <div className="col-md-10 col-12 mx-auto">
+            <div className="col-md-12 col-12 mx-auto">
               <Map
                 MyComponent={MyComponent}
                 community={community}
@@ -101,7 +101,8 @@ function MyComponent() {
             </p>
 
             <p className="text-about">
-              {t("home.main.section3.desc2")}
+              {t("home.main.section3.desc2")}<span><Link to="https://www.internetsociety.org/fr/issues/community-networks/success-stories/mamaila/">Lire plus ici</Link></span>
+
             </p>
             </div>
             <div className="col-md-6 col-12 mt-5">

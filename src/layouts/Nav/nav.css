@@ -105,6 +105,10 @@ p {
         padding-top: 64px;
     }
 
+    .none{
+        display: none;
+    }
+
   }
 
 

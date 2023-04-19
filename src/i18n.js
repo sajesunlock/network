@@ -11,7 +11,7 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
@@ -19,6 +19,10 @@ i18n
     resources: {
       en: {
         translation: {
+          headers: {
+            title: "Observatory of Community Networks",
+            button: "Rc News",
+          },
           nav: {
              contact: "Contact us",
              ou: "RC News",
@@ -108,12 +112,40 @@ i18n
           },
           about: {
             title1: "Hi, we‘re ORC.",
-            title2: "Our Impact",
+            desc: `The Observatory of Community Networks (ORC)
+            brings together in a single site the projects,
+            grants and news on community networks
+            around the world to promote universal access to high-speed Internet
+            with an affordable cost for populations excluded because of their geographical areas,
+            economic power or lack of telecommunications infrastructure
+            because the United Nations recognizes that accessing the Internet is
+            a fundamental right.`,
+              desc1: `According to the 2023 report by We are social and Meltwater,
+              in the 8 billion of the total world population,
+              the world today has 5.16 billion Internet users,
+              which means that 64.4% of the world's population is now online
+              but 35.6% are not yet online to cum
+              the same benefits as connected populations.`,
+              desc2: `Community networks
+              refer to telecommunications infrastructure
+              deployed and operated by a local group to meet
+              their own communication needs.
+              They are the result of people working together, combining their resources,
+              uniting their efforts and coming together to fill
+              the absence or gaps in connectivity.
+              Concretely, this access to the Internet will allow access to electronic commerce,
+              telehealth services distance learning,
+              to social and political commitment,
+              government services and public safety information.`,
           },
       },
       },
       fr: {
         translation: {
+          headers: {
+            title: "Observatoire des Réseaux Communautaires",
+            button: "Rc Actualites",
+          },
             nav: {
                contact: "Contactez nous",
                ou: "Actualités RC",
@@ -152,7 +184,7 @@ i18n
                   desc: "Partout dans le monde, les gens s’unissent pour créer et maintenir leurs propres connexions à l’Internet en mettant en place des réseaux  communautaires pour connecter près de 3 milliards qui ne le sont pas encore.",
                   desc2: `Au sein des pays comme Afrique du Sud, Argentine, Zimbabwe, Colombie, Inde, Etats Unis, Kirghizistan,
                        Géorgie ont déjà développé des initiatives de réseaux communautaires pour toucher des populations marginalisées
-                       afin de résoudre leurs problèmes d’accès à Internet à un faible coût. Lire plus ici`,
+                       afin de résoudre leurs problèmes d’accès à Internet à un faible coût. `,
                 },
               },
             },
@@ -213,7 +245,31 @@ i18n
             },
             about: {
               title1: "Bonjour, nous sommes ORC.",
-              title2: "Notre impact",
+              desc: `L’Observatoire des Réseaux Communautaires (ORC)
+              rassemble dans un site unique les projets,
+              les subventions et les actualités sur les réseaux communautaires
+              dans le monde en vue de favoriser l’accès universel à l’Internet à haut débit
+              avec un coût abordable pour les  populations exclues du fait de leur zones géographique,
+              du pouvoir économique ou d’absence d’infrastructures de télécommunication
+              car l’Organisation des Nations Unis reconnait qu’accéder à Internet est
+              un droit fondamental.`,
+              desc1: `Selon le rapport 2023 de We are social et Meltwater,
+              dans les 8 milliards de la population mondiale totale,
+              le monde compte aujourd’hui 5,16 milliards d’utilisateurs d’Internet,
+              ce qui signifie que 64,4 % de la population mondiale est désormais en ligne
+              mais 35,6% ne sont pas encore en ligne pour jouir
+              les mêmes bénéfices que les populations connectées.`,
+              desc2: `Les réseaux communautaires
+              se réfèrent aux infrastructures de télécommunications
+              déployées et exploitées par un groupe local pour répondre à
+              ses propres besoins de communication.
+              Ils sont le résultat de personnes travaillant ensemble, combinant leurs ressources,
+              unissant leurs efforts et se rapprochant pour combler
+              l’absence ou les lacunes de connectivité.
+              Concrètement, cet accès à  Internet permettra l’accès au commerce électronique,
+              aux services de télé-santé à l’apprentissage à distance,
+              à l’engagement social et politique,
+              aux services gouvernementaux et  à l’information sur la sécurité publique.`,
             },
         },
       },

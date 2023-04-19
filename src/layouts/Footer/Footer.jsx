@@ -16,7 +16,7 @@ function Footer({ t, i18n }) {
                     <div className="col-md-3 col-6 product">
                       <ul className="ul">
                         <a href><li className="titre">{t("footer.title1.title")}</li></a>
-                        <li className="mt-5 mb-5">{t("footer.title1.part1")}</li>
+                        <li className="mt-5 mb-5"><Link to="/about">{t("footer.title1.part1")}</Link> </li>
                         <hr />
                         <li><span><i className="fa fa-envelope-o " aria-hidden="true" /></span> <a href="mailto:contact@orc.org.ht" className="text-line">{t("footer.title1.part2")}</a></li>
                         <hr />
@@ -32,9 +32,9 @@ function Footer({ t, i18n }) {
                     <div className="col-md-3  col-6 resource">
                       <ul>
                         <li className="titre">{t("footer.title3.title")}</li>
-                        <li className="mt-5 "> <Link className="text-line" to="/contact"> {t("footer.title3.part1")} </Link> </li>
-                        <li className="mt-4 "><a className="text-line" href="/condition">{t("footer.title3.part2")}</a></li>
-                        <li className="mt-4 "><a className="text-line" href="/privacy">{t("footer.title3.part3")}</a></li>
+                        <li className="mt-5 "> <Link className="text-line" to="/"> {t("footer.title3.part1")} </Link> </li>
+                        <li className="mt-4 "><a className="text-line" href="/">{t("footer.title3.part2")}</a></li>
+                        <li className="mt-4 "><a className="text-line" href="/">{t("footer.title3.part3")}</a></li>
                       </ul>
                     </div>
                     <div className="col-md-3  col-6 resource">
