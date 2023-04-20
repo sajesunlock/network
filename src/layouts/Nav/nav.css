@@ -51,7 +51,7 @@ p {
     padding-top: 64px;
 }
 .imgBg{
-    background-image: url(https://sajesunlock.s3.amazonaws.com/output-onlinepngtools.png);
+    background-image: url("https://sajesunlock.s3.amazonaws.com/output-onlinepngtools+(2).png");
     background-size:cover;
     width: auto;
     height: 500px;
@@ -91,7 +91,7 @@ p {
         display: inline;
     }
     .imgBg{
-        background-image: url(https://sajesunlock.s3.amazonaws.com/output-onlinepngtools.png);
+        background-image: url("https://sajesunlock.s3.amazonaws.com/output-onlinepngtools+(2).png");
         background-size:cover;
         width: auto;
         height: '50%';
