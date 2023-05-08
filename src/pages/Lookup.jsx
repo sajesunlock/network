@@ -72,7 +72,7 @@ function MyComponent() {
             <div className="col-md-4 mt-5">
               <ItemCommunity community={community} />
               <hr />
-              <h3 className="titre">Ajouter community</h3>
+              <h3 className="titre">Ajouter votre réseau communautaire</h3>
               {isLogging ? (
                 <AddCommunityForm
                   lat={lat}

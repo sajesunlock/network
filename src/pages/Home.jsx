@@ -40,7 +40,7 @@ function MyComponent() {
 
         <div className="col-12 imgBg">
           <h1 className="titre1">{ t("headers.title") }</h1>
-          <button className="btn btn-lg btn-block btn-primary col-md-2 col-6 mt-5 mx-auto">{ t("headers.button") }</button>
+          <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-2 col-6 mt-5 mx-auto">{ t("headers.button") }</Link>
         </div>
 
         <div className="row m-0 bg-light">
@@ -58,31 +58,8 @@ function MyComponent() {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-12 col-md-6 mt-5">
-            <hr />
-            <img
-              src="https://afcomnet.afroleadership.org/wp-content/uploads/2022/11/Picture-883x500.png"
-              alt=""
-              width="103%"
-              height="100%"
-              style={{ borderRight: "1px solid #eee" }}
-            />
-          </div>
-          <div className="col-md-6 col-12 mt-5">
-            <hr />
-          <h1 className="titre mb-3 mt-3">{t("home.main.section2.title")} </h1>
-          <p className="text-about">
-            {t("home.main.section2.desc")}
-          </p>
-          <p className="text-about">
-            {t("home.main.section2.desc")}
-          </p>
-          </div>
-        </div>
-
         <h1 className="titre mb-3 mt-5 mb-3 text-center">RC en Haïti</h1>
-        <p className="text-center text-about">voici la liste des réseaux communautaires d&#39;Haïti et leurs adresses.</p>
+        <p className="text-center text-about">Voici la liste des réseaux communautaires d&#39;Haïti et leurs adresses.</p>
         <Link to="/lookup/community"><h5 className="text-center">Voir tous les Rc en Haïti {">"} </h5></Link>
           <div className="row">
             <div className="col-md-12 col-12 mx-auto">

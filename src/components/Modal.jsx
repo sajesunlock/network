@@ -7,7 +7,7 @@ export default function Modal() {
     <>
         { /** Button trigger modal -->   */ }
         <button type="button" className="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
-        Connectez-vous pour ajouter une communauté
+        ajouter
         </button>
 
         { /** Modal -->  */ }
