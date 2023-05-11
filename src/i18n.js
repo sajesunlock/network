@@ -144,7 +144,7 @@ i18n
         translation: {
           headers: {
             title: "Observatoire des Réseaux Communautaires",
-            button: "Rc Actualites",
+            button: "Rc Actualités",
           },
             nav: {
                contact: "Contactez nous",

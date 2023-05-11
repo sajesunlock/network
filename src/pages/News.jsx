@@ -20,10 +20,10 @@ console.log(news);
     <div className="container mt-5">
       <dov className="row">
         <div className="col-12">
-        <div className="jumbotron jumbotron-fluid bg-dark rounded text-light pb-5 pt-5">
+        <div className="jumbotron jumbotron-fluid bg-dark rounded text-light p-5">
           <div className="container">
             <h1 className="display-4">Actualités</h1>
-            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p className="lead">découvrez tous les événements et actualités de l&lsquo;orc.</p>
           </div>
         </div>
         </div>
@@ -43,7 +43,7 @@ console.log(news);
         ))}
       </div>
       <div className="row mt-5">
-        <div className="col-1 col-md-2 mx-auto">
+        <div className="col-2 col-md-2 mx-auto">
         <nav aria-label="Page navigation example">
           <ul className="pagination">
             <li className="page-item">
@@ -52,8 +52,6 @@ console.log(news);
               </a>
             </li>
             <li className="page-item"><a className="page-link" href="/#">1</a></li>
-            <li className="page-item"><a className="page-link" href="/#">2</a></li>
-            <li className="page-item"><a className="page-link" href="/#">3</a></li>
             <li className="page-item">
               <a className="page-link" href="/#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
