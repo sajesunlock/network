@@ -88,11 +88,7 @@ export default function AddCommunityForm({ lat, lng }) {
             <input type="text" className="form-control" value={lng} placeholder="Longitude" />
           </div>
         </div>
-        <div className="custom-file mt-3 mb-3">
-          <input type="file" className="custom-file-input" onChange={onFileChange} onSelect={onFileChange} id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" />
-          <label className="custom-file-label" htmlFor="inputGroupFile01">{file ? file.name : "Choose file"}</label>
-        </div>
-        <div className="row">
+        <div className="row mt-4 ">
           <div className="col">
             <input type="text" className="form-control" name="email" value={community.email} onChange={handleChange} placeholder="email" />
           </div>

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -40,6 +41,10 @@ export default function About() {
           </p>
         </div>
       </div>
+      <Helmet>
+        <title>Observatoire des Réseaux Communautaires | A propos </title>
+        <meta name="description" content="Actualités haitiennes sur les réseaux communautaires et l'accès à Internet universel" />
+      </Helmet>
     </div>
   );
 }

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../service/dataService";
 
 export default function News() {
   const [news, setNews] = useState([]);
+  const { t } = useTranslation();
 
   useEffect(() => {
     async function getCommunity() {
@@ -22,8 +25,8 @@ console.log(news);
         <div className="col-12">
         <div className="jumbotron jumbotron-fluid bg-dark rounded text-light p-5">
           <div className="container">
-            <h1 className="display-4">Actualités</h1>
-            <p className="lead">découvrez tous les événements et actualités de l&lsquo;orc.</p>
+            <h1 className="display-4">{t("new.title")}</h1>
+            <p className="lead">{t("new.subtitle")}</p>
           </div>
         </div>
         </div>
@@ -61,6 +64,10 @@ console.log(news);
         </nav>
         </div>
       </div>
+      <Helmet>
+        <title>Observatoire des Réseaux Communautaires | Actualités </title>
+        <meta name="description" content="Actualités haitiennes sur les réseaux communautaires et l'accès à Internet universel" />
+      </Helmet>
     </div>
   );
 }

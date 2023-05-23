@@ -29,6 +29,11 @@ i18n
              about: "About us",
              button: "RC News",
           },
+          section: {
+            title: "RC in Haiti",
+            subtitle: "Here is the list of community networks in Haiti and their addresses.",
+            button: "See all Rc in Haiti >",
+          },
           home: {
             main: {
               section1: {
@@ -51,9 +56,13 @@ i18n
               section3: {
                 title: "RC around the world.",
                 desc: "Around the world, people are coming together to create and maintain their own connections to the Internet by setting up community networks to connect the nearly 3 billion who are not yet connected.",
-                decs2: "Within countries such as South Africa, Argentina, Zimbabwe, Colombia, India, United States, Kyrgyzstan, Georgia have already developed community network initiatives to reach marginalized populations in order to solve their Internet access problems at a low cost. . Read more here",
+                desc2: "Within countries such as South Africa, Argentina, Zimbabwe, Colombia, India, United States, Kyrgyzstan, Georgia have already developed community network initiatives to reach marginalized populations in order to solve their Internet access problems at a low cost. ",
               },
             },
+          },
+          new: {
+            title: "News",
+            subtitle: "Haitian News on Community Networks and Universal Internet Access",
           },
           contact: {
             title: "Contact us",
@@ -152,6 +161,11 @@ i18n
                about: "A propos de nous",
                button: "Actualités RC",
             },
+            section: {
+              title: "RC en Haïti",
+              subtitle: "Voici la liste des réseaux communautaires d'Haïti et leurs adresses.",
+              button: "Voir tous les Rc en Haïti >",
+            },
             home: {
               main: {
                 section1: {
@@ -187,6 +201,10 @@ i18n
                        afin de résoudre leurs problèmes d’accès à Internet à un faible coût. `,
                 },
               },
+            },
+            new: {
+              title: "Actualités",
+              subtitle: "Actualités haitiennes sur les réseaux communautaires et l‘accès à Internet universel",
             },
             contact: {
               title: "Contactez-nous",

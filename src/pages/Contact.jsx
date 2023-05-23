@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation, Trans } from "react-i18next";
 import FormContact from "../components/FormContact";
 
@@ -25,6 +26,10 @@ export default function Contact() {
               <FormContact />
             </div>
         </div>
+        <Helmet>
+          <title>Observatoire des Réseaux Communautaires | Contact </title>
+          <meta name="description" content="Actualités haitiennes sur les réseaux communautaires et l'accès à Internet universel" />
+        </Helmet>
     </div>
   );
 }

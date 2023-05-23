@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 import { useMap } from "react-leaflet";
 import { collection, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
@@ -10,7 +11,7 @@ import db from "../service/dataService";
 import Network from "../static/img/network.png";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [community, setCommunity] = useState(null);
   const [lng, setLng] = useState(null);
   const [lat, setLat] = useState(null);
@@ -58,9 +59,9 @@ function MyComponent() {
           </div>
         </div>
 
-        <h1 className="titre mb-3 mt-5 mb-3 text-center">RC en Haïti</h1>
-        <p className="text-center text-about">Voici la liste des réseaux communautaires d&#39;Haïti et leurs adresses.</p>
-        <Link to="/lookup/community"><h5 className="text-center">Voir tous les Rc en Haïti {">"} </h5></Link>
+        <h1 className="titre mb-3 mt-5 mb-3 text-center">{t("section.title")}</h1>
+        <p className="text-center text-about">{t("section.subtitle")}</p>
+        <Link to="/lookup/community"><h5 className="text-center">{t("section.button")}</h5></Link>
           <div className="row">
             <div className="col-md-12 col-12 mx-auto">
               <Map
@@ -95,6 +96,12 @@ function MyComponent() {
         </div>
       </div>
       </div>
+      <Helmet>
+        <title>Observatoire des Réseaux Communautaires | accueil </title>
+        <meta name="description" content="Voici la liste des réseaux communautaires d'Haïti et leurs adresses." />
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" />
+        <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/4350/4350908.png" />
+      </Helmet>
     </div>
   );
 }

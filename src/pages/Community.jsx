@@ -1,5 +1,6 @@
 /* eslint-disable consistent-return */
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
 import ProfileCommunity from "../components/ProfileCommunity";
@@ -37,6 +38,16 @@ export default function Community() {
         <ProfileCommunity data={data} />
         :
         "loading"}
+        <Helmet>
+          <title>
+            Observatoire des Réseaux Communautaires |
+             Cartographie du réseau Du Réseaux Communautaires
+          </title>
+          <meta
+            name="description"
+            content="liste des réseaux communautaires d'Haïti et leurs adresses."
+          />
+        </Helmet>
     </div>
   );
 }
