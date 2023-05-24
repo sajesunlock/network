@@ -38,7 +38,7 @@ export default function Gouvernance() {
       </div>
 
       <Helmet>
-        <title>Observatoire des Réseaux Communautaires | Actualités </title>
+        <title>Observatoire des Réseaux Communautaires | Gouvernance </title>
         <meta name="description" content="Actualités haitiennes sur les réseaux communautaires et l'accès à Internet universel" />
       </Helmet>
     </div>
