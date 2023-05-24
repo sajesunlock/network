@@ -222,7 +222,7 @@ i18n
             footer: {
               title1: {
                   title: "Nous",
-                  part1: "a propos de nous",
+                  part1: "A propos de nous",
                   part2: "Envoyez-nous un email",
                   part3: "Appelez-nous",
               },

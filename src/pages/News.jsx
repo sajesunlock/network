@@ -17,8 +17,6 @@ export default function News() {
     getCommunity();
 }, []);
 
-console.log(news);
-
   return (
     <div className="container mt-5">
       <dov className="row">

@@ -14,6 +14,9 @@ import Lookup from "./pages/Lookup";
 import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
+import Regulation from "./pages/Regulation";
+import Particularite from "./pages/Particularite";
+import Gouvernance from "./pages/Gouvernance";
 
 function RoutesPage() {
   return (
@@ -30,6 +33,9 @@ function RoutesPage() {
                   */}
 
                   <Route path="/" element={<Home />} />
+                  <Route path="/Regulation" element={<Regulation />} />
+                  <Route path="/Particularite" element={<Particularite />} />
+                  <Route path="/gouvernance" element={<Gouvernance />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/community/news" element={<News />} />
                   <Route path="/about" element={<About />} />
