@@ -5,10 +5,14 @@ import { useTranslation } from "react-i18next";
 import { useMap } from "react-leaflet";
 import { collection, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import Carousel from "../components/carousel";
 import Map from "../components/Map";
 import db from "../service/dataService";
 
 import Network from "../static/img/network.png";
+import Img1 from "../static/img/PHOTO-2023-05-25-12-46-46.jpg";
+import Img2 from "../static/img/PHOTO-2023-05-25-12-47-12 (1).jpg";
+import Img3 from "../static/img/PHOTO-2023-05-25-12-47-12.jpg";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -36,12 +40,11 @@ function MyComponent() {
     }, []);
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row p-0 ">
       <div className="col-12 p-0">
 
-        <div className="col-12 imgBg">
-          <h1 className="titre1">{ t("headers.title") }</h1>
-          <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-2 col-6 mt-5 mx-auto">{ t("headers.button") }</Link>
+        <div className="col-md-12 pr-0 pl-0">
+          <Carousel />
         </div>
 
         <div className="row m-0 bg-light">
@@ -93,6 +96,24 @@ function MyComponent() {
             </div>
           </div>
         </div>
+        </div>
+      </div>
+      </div>
+      <div className="container mt-5">
+      <div className="row">
+        <div className="col-3 mx-auto">
+          <h3 style={{ borderBottom: "2px solid black", textAlign: "center" }}>Notre Partenaire</h3>
+        </div>
+      </div>
+      <div className="row mt-5 p-5" style={{ backgroundColor: "rgb(255 255 255)" }}>
+        <div className="col-4">
+            <img src={Img2} className="mt-5" width="100%" alt="" />
+        </div>
+        <div className="col-4">
+            <img src={Img1} width="100%" alt="" />
+        </div>
+        <div className="col-4">
+            <img src="http://www.transversal.ht/img/logo_transversal.png" className="mt-5" width="100%" alt="" />
         </div>
       </div>
       </div>
