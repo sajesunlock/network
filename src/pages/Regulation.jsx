@@ -34,7 +34,7 @@ export default function Regulation() {
         <ul>
             <li className=" mt-3 pl-5 text-about"><b>.</b> Enregistrement / octroi de licences et de permis </li>
             <li className=" mt-3 pl-5 text-about"><b>.</b> Taxes, réglementions pour l&lsquo;obtention de permis
-                et frais d`&lsquo;importation
+                et frais d&lsquo;importation
             </li>
             <li className=" mt-3 pl-5 text-about"><b>.</b> Financement </li>
             <li className=" mt-3 pl-5 text-about"><b>.</b> Accès au spectre - pénurie, utilisation inefficace et dépenses</li>
@@ -43,7 +43,7 @@ export default function Regulation() {
         Les gouvernements peuvent atténuer ou éliminer
         les obstacles par l&lsquo;assouplissement des exigences réglementaires
         l&lsquo;exemptions des taxes et des frais, la transparence améliorée et
-        l&lsquo;élargissement du service universel et d`&lsquo;autres possibilités de financement.
+        l&lsquo;élargissement du service universel et d&lsquo;autres possibilités de financement.
         </p>
       </div>
       <Helmet>

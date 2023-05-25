@@ -39,7 +39,7 @@ i18n
               section1: {
                 title: "What is a Community Network!",
                 desc: `
-                  Community networks refer to the telecommunications infrastructure deployed and operated by a local group to meet its own communication needs[1]. They are the result of people working together, combining their resources, joining forces and coming together to bridge the absence or gaps in connectivity.`,
+                  Community networks refer to the telecommunications infrastructure deployed and operated by a local group to meet its own communication needs. They are the result of people working together, combining their resources, joining forces and coming together to bridge the absence or gaps in connectivity.`,
               },
               section2: {
                 title: "Interest of wireless community networks",
@@ -173,7 +173,7 @@ i18n
                   desc: `
                   Les réseaux communautaires se réfèrent aux infrastructures de télécommunications
                    déployées et exploitées par un groupe local pour répondre à ses propres besoins
-                   de communication[1]. Ils sont le résultat de personnes travaillant ensemble,
+                   de communication. Ils sont le résultat de personnes travaillant ensemble,
                     combinant leurs ressources, unissant leurs efforts et se rapprochant
                      pour combler l’absence
                      ou les lacunes de connectivité.
