@@ -23,6 +23,9 @@ i18n
             title: "Observatory of Community Networks",
             button: "Rc News",
           },
+          patner: {
+            name: "Our Partners",
+          },
           nav: {
              contact: "Contact us",
              ou: "RC News",
@@ -154,6 +157,9 @@ i18n
           headers: {
             title: "Observatoire des Réseaux Communautaires",
             button: "Rc Actualités",
+          },
+          patner: {
+            name: "Notre Partenaire",
           },
             nav: {
                contact: "Contactez nous",

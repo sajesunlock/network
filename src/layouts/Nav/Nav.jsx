@@ -66,6 +66,28 @@ const handleLogout = () => {
                 <li className="nav-item active">
                   <Link className="nav-link" to="/about">{t("nav.about")} <span className="sr-only">(current)</span></Link>
                 </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projets
+                  </a>
+                  <ul className="dropdown-menu">
+                    <Link className="nav-link text-dark" to="/projet">Projets de réseaux communautaires de l&apos;ORC<span className="sr-only">(current)</span></Link>
+                  </ul>
+                </li>
+                {/**
+                <li className="nav-item active">
+                  <Link className="nav-link"
+                  to="/projet">Projets de réseaux communautaires de l&apos;ORC
+                  <span className="sr-only">
+                  (current)</span></Link>
+                </li>
+                */}
                 <li className="nav-item active">
                   <Link to="/community/news" className="nav-link">{t("nav.ou")}</Link>
                 </li>

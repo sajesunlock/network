@@ -20,7 +20,7 @@ export default function Carousel() {
           <div className="carousel-item active">
             <img src={Img1} className="d-block w-100" alt="..." />
             <div className="carousel-caption  d-md-block">
-              <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>Observatoire des Réseaux Communautaires</h1>
+              <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>{ t("headers.title") }</h1>
               <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-4 col-8 mt-5 mx-auto">{ t("headers.button") }</Link>
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function Carousel() {
           <div className="carousel-item">
             <img src={Img2} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
-            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>Observatoire des Réseaux Communautaires</h1>
+            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>{ t("headers.title") }</h1>
               <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-4 col-8 mt-5 mx-auto">{ t("headers.button") }</Link>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Carousel() {
           <div className="carousel-item">
             <img src={Img3} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
-            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>Observatoire des Réseaux Communautaires</h1>
+            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>{ t("headers.title") }</h1>
               <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-4 col-8 mt-5 mx-auto">{ t("headers.button") }</Link>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Carousel() {
           <div className="carousel-item ">
             <img src={Img4} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-md-block">
-            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>Observatoire des Réseaux Communautaires</h1>
+            <h1 className="titre1" style={{ position: "relative", top: "-500px" }}>{ t("headers.title") }</h1>
               <Link to="/community/news" className="btn btn-lg btn-block btn-primary col-md-4 col-8 mt-5 mx-auto">{ t("headers.button") }</Link>
             </div>
           </div>

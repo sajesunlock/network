@@ -29,10 +29,11 @@ export default function About() {
         </div>
         <div className="col-md-6">
           <img
-            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw0MjI3MDJ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2Nzg4OTYyOTI&ixlib=rb-4.0.3&q=80&w=1080"
+            src="https://img.freepik.com/photos-gratuite/batiment-brique-brune-ciel-bleu_23-2148252800.jpg?w=740&t=st=1685027907~exp=1685028507~hmac=64dd18569d4776108b4326996c44e9a25d992c8c6e90295bec9a6aecf9a6ec52"
             alt=""
             width="100%"
-            className=""
+            height="500px"
+            className="rounded"
           />
         </div>
         <div className="col-md-6">

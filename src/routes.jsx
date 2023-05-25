@@ -17,6 +17,7 @@ import News from "./pages/News";
 import Regulation from "./pages/Regulation";
 import Particularite from "./pages/Particularite";
 import Gouvernance from "./pages/Gouvernance";
+import Projet from "./pages/projet";
 
 function RoutesPage() {
   return (
@@ -34,6 +35,7 @@ function RoutesPage() {
 
                   <Route path="/" element={<Home />} />
                   <Route path="/Regulation" element={<Regulation />} />
+                  <Route path="/projet" element={<Projet />} />
                   <Route path="/Particularite" element={<Particularite />} />
                   <Route path="/gouvernance" element={<Gouvernance />} />
                   <Route path="/contact" element={<Contact />} />

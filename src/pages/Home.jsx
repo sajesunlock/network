@@ -12,7 +12,7 @@ import db from "../service/dataService";
 import Network from "../static/img/network.png";
 import Img1 from "../static/img/PHOTO-2023-05-25-12-46-46.jpg";
 import Img2 from "../static/img/PHOTO-2023-05-25-12-47-12 (1).jpg";
-import Img3 from "../static/img/PHOTO-2023-05-25-12-47-12.jpg";
+import Img3 from "../static/img/logo_transversal.png";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -102,18 +102,18 @@ function MyComponent() {
       <div className="container mt-5">
       <div className="row">
         <div className="col-3 mx-auto">
-          <h3 style={{ borderBottom: "2px solid black", textAlign: "center" }}>Notre Partenaire</h3>
+          <h3 style={{ borderBottom: "2px solid black", textAlign: "center" }}>{ t("patner.name") }</h3>
         </div>
       </div>
       <div className="row mt-5 p-5" style={{ backgroundColor: "rgb(255 255 255)" }}>
-        <div className="col-4">
+        <div className="col-m-4 col-12">
             <img src={Img2} className="mt-5" width="100%" alt="" />
         </div>
-        <div className="col-4">
+        <div className="col-m-4 col-12">
             <img src={Img1} width="100%" alt="" />
         </div>
-        <div className="col-4">
-            <img src="http://www.transversal.ht/img/logo_transversal.png" className="mt-5" width="100%" alt="" />
+        <div className="col-m-4 col-12">
+            <img src={Img3} className="mt-5" width="100%" alt="" />
         </div>
       </div>
       </div>
